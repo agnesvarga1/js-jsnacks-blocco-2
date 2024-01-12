@@ -10,22 +10,27 @@
 //push in arr
 //somma i valori input
 //else stampa numeri
-//esco dal loop se numero dato
+//esco dal loop se numero dato > 50 or al interno del arr la somma
 const arrNums = [];
 
 let num = 0;
-
+let sum = 0;
 do {
   do {
     num = Number(prompt("Inserisci un numero"));
   } while (isNaN(num));
   arrNums.push(num);
-
+  console.log(arrNums);
   let i = 0;
+
   while (i < arrNums.length) {
-    num = num + arrNums[i];
+    sum = sum + arrNums[i];
     i++;
   }
-  console.log(arrNums);
+  num = sum;
+  sum = 0;
   console.log(num);
 } while (num < 50);
+
+console.log(arrNums);
+console.log("somma in arr " + num);
