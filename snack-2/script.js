@@ -6,10 +6,8 @@ function getRandomNumber(min, max) {
 }
 
 let number = getRandomNumber(1, 100);
-let userNumber;
-console.log(number);
-console.log(userNumber);
-userNumber = Number(prompt("indovina il numero fra 1 e 100?"));
+let userNumber = Number(prompt("indovina il numero fra 1 e 100?"));
+
 while (userNumber !== number) {
   if (userNumber > number) {
     alert(`${userNumber} e troppo alto `);
